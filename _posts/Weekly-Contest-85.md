@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Weekly Contest 85
+title:      Weekly-Contest-85
 subtitle:   
 date:       2018-05-20
 author:     liangcs
