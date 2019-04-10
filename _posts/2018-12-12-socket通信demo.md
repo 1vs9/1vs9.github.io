@@ -1,14 +1,14 @@
 ---
 layout:     post
-title:      Leetcode 周赛 
-subtitle:   第85周= =
+title:      socket通信Demo
+subtitle:   网络协议
 date:       2018-05-23
 author:     liangcs71
 header-img: img/cats.jpg
 catalog: true
 tags:
-    - Leetcode
-    - Algorithm
+    - network
+    - socket
 ---
 
 
