@@ -16,7 +16,7 @@ tags:
 
 <strong>WSAStartup();</strong> 主要就是进行相应的socket库绑定, 初始化网络环境。
 
-```c++
+```java
 int WSAStartup(    
   WORD wVersionRequested,       //版本号，一般使用2.2版本  
   LPWSADATA lpWSAData  <span style="white-space:pre">     </span>//WSAData地址  
@@ -59,7 +59,7 @@ int WSAStartup(
     </li>
 </ol>
 
-```c++
+```java
 struct sockaddr_in{  
     short              sin_family;//协议簇  
     unsigned short     sin_port;//端口  
@@ -70,7 +70,7 @@ struct sockaddr_in{
 
 其中in_addr结构体用来存放32位IPV4地址，如下
 
-```c++
+```java
 struct in_addr{  
     I_addr_t               s_addr;//32位IPV4地址 
 }; 
@@ -78,7 +78,7 @@ struct in_addr{
 
 INADDR_ANY 监听0.0.0.0地址 socket只绑定端口让路由表决定传到哪个ip,转换过来就是0.0.0.0，泛指本机的意思，也就是表示本机的所有IP
 
-```c++
+```java
 sockaddr_in addr = { 0 };
 addr.sin_family = AF_INET; //指定地址族
 addr.sin_addr.s_addr = INADDR_ANY;//IP初始化
@@ -185,7 +185,7 @@ bind(sock, (sockaddr*)&addr, sizeof(addr));//分配IP和端口
 
 #### 示例代码
 
-```c++
+```java
 //非Unix系统
 #if defined(_MSC_VER) || defined(__MINGW32__) || defined(WIN32)
 #include <WinSock2.h>
